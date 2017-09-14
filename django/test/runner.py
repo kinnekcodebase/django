@@ -302,7 +302,7 @@ class ParallelTestSuite(unittest.TestSuite):
         - make tracebacks picklable with tblib, if available
 
         Even with tblib, errors may still occur for dynamically created
-        exception classes such Model.DoesNotExist which cannot be unpickled.
+        exception classes which cannot be unpickled.
         """
         if tblib is not None:
             tblib.pickling_support.install()
